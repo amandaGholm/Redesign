@@ -1,0 +1,271 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+.footer_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+.section_top {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  background-image: url("skulpturer/background.png");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: change 20s infinite ease-in-out;
+}
+@keyframes change {
+  0% {
+    background-image: url(skulpturer/background.png);
+  }
+  20% {
+    background-image: url(skulpturer/background3.png);
+  }
+  40% {
+    background-image: url(skulpturer/background4.png);
+  }
+  60% {
+    background-image: url(skulpturer/billede10.png);
+  }
+  80% {
+    background-image: url(skulpturer/background10.png);
+  }
+}
+
+#bjarne_box {
+  display: flex;
+  flex-direction: row;
+  width: 63%;
+  height: fit-content;
+  padding: 2em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+}
+
+.bjarne_box1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.bjarne_box1 img {
+  width: 50vh;
+  margin-right: 2em;
+  grid-row: span 2;
+}
+#bjarne_img {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+#bjarne_beskrivelse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#link {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* om mig  */
+.om_mig img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* produkt */
+@media (min-width: 799px) {
+  #produkt_div {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    padding-left: 12em;
+    padding-right: 12em;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 799px) {
+  #produkt_div {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+    padding-left: 12em;
+    padding-right: 12em;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#produkt_beskrivelse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .galleri {
+    display: grid;
+    height: fit-content;
+    width: fit-content;
+    max-width: 1200px;
+    gap: 3em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .galleri > img:nth-child(1) {
+    grid-column: 1/4;
+    grid-row: span 2;
+    width: 61vh;
+  }
+  .galleri > img:nth-child(2) {
+    grid-column: 13/4;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(3) {
+    grid-column: 13/4;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(5) {
+    grid-column: 1/4;
+    grid-row: 3;
+    width: 68vh;
+  }
+  .galleri > img:nth-child(6) {
+    grid-column: 1/4;
+    grid-row: 4;
+    width: 68vh;
+  }
+  .galleri > img:nth-child(4) {
+    grid-column: 4/14;
+    grid-row: span 2;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(7) {
+    grid-column: 1/4;
+    grid-row: span 2;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(8) {
+    grid-column: 13/4;
+    grid-row: 5;
+    width: 68vh;
+  }
+  .galleri > img:nth-child(9) {
+    grid-column: 4/13;
+    grid-row: span 2;
+    width: 65vh;
+  }
+}
+
+@media (min-width: 400px) {
+  .galleri {
+    display: grid;
+    height: fit-content;
+    width: fit-content;
+    max-width: 1200px;
+    gap: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .galleri > img:nth-child(1) {
+    grid-column: 1/4;
+    grid-row: span 2;
+    width: 61vh;
+  }
+  .galleri > img:nth-child(2) {
+    grid-column: 13/4;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(3) {
+    grid-column: 13/4;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(5) {
+    grid-column: 1/4;
+    grid-row: 3;
+    width: 68vh;
+  }
+  .galleri > img:nth-child(6) {
+    grid-column: 1/4;
+    grid-row: 4;
+    width: 68vh;
+  }
+  .galleri > img:nth-child(4) {
+    grid-column: 4/14;
+    grid-row: span 2;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(7) {
+    grid-column: 1/4;
+    grid-row: span 2;
+    width: 65vh;
+  }
+  .galleri > img:nth-child(8) {
+    grid-column: 13/4;
+    grid-row: 5;
+    width: 68vh;
+  }
+  .galleri > img:nth-child(9) {
+    grid-column: 4/13;
+    grid-row: span 2;
+    width: 65vh;
+  }
+}
+
+.galleri > img:nth-child(1):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(2):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(3):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(4):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(5):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(6):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(7):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(8):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+.galleri > img:nth-child(9):hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
